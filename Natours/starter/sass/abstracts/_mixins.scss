@@ -12,3 +12,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+// Media Query Manager
+/*
+0 - 600px: Phone
+600px - 900px - Tablet portrait
+900px - 1200px - Tablet landscape
+1200px - 1800px - "Normal styles"
+1800+: Big desktop
+*/
+
+@mixin respond-phone {
+    @media (max-width: 600px) {@content};
+}
